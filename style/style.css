@@ -1,0 +1,945 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+/* .searchbar_container{
+    width: 90%;
+    display: flex;
+    gap: 5px;
+    align-items: baseline;
+    margin-top: 10px;
+} */
+.custom_navbar_container svg{
+    cursor: pointer;
+    position: absolute;
+    right: 6%;
+    top: 38%;
+}
+.search_input{
+    width: 80%;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 21px;
+    margin-top: 10px;
+}
+.search_input::placeholder{
+    color: rgb(231, 217, 217);
+}
+
+.hide_item{
+    display: none;
+}
+
+
+.custom_navbar{
+    background: #C12038;
+    width: 100%;
+    padding: 10px 33px;
+}
+.custom_navbar_container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.custom_navbar img{
+    width: 118px;
+}
+.custom_navbar .header_text{
+    font-size: 16px;
+    line-height: 129%;
+    color: #FFFFFF;
+}
+.language_selector{
+    position: absolute;
+    right: 0;
+    top: 20%;
+    font-size: 26px;
+    text-align: right;
+    color:white;
+    border: none;
+    
+
+}
+.language_selector select{
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    border: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 5px;
+    padding-right: 0px;
+    outline: none;
+}
+.language_selector select option{
+    cursor: pointer;
+    background-color: #f05c5c;
+    border: none;
+    outline: none;
+}
+
+.header_img_container{
+    position: relative;
+
+}
+.header_img_container img{
+    width: 100%;
+}
+.color_background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* background: #C12038; */
+    background: linear-gradient(180deg, #C12038 0%, rgba(194, 99, 113, 0.59375) 39.06%, rgba(0, 0, 0, 0) 100%);
+
+}
+.color_background span{
+    font-size: 50px;
+    line-height: 129%;
+    color: #FFFFFF;
+    font-weight: bold;
+    position: absolute;
+    top: 31%;
+    left: 5%;
+}
+.chain_restaurant_logos{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 80px 0px;
+
+}
+
+.chain_restaurant_logos .col-4{
+    width: 33.33%;
+    text-align: center;
+    padding: 20px 0px;
+}
+.chain_restaurant_logos .col-4 img{
+    width: 40%;
+}
+.dineburger_logo{
+    padding-top: 50px !important;
+}
+.dinemeat_logo{
+    padding-top: 40px !important;
+}
+.about_us{
+    background-color: #F9F9F9;
+    padding: 43px 70px;
+}
+.about_us_header{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+}
+.about_us_content{
+    font-size: 24px;
+    padding-top: 18px;
+}
+
+.background_ellipse_red{
+    position: absolute;
+    width: 31%;
+    height: 50%;
+    left: 0;
+    bottom: 0;
+    filter: blur(1px);
+    background: linear-gradient(to right top, #C12038 -15%, rgba(194, 99, 113, 0.59375) 17.06%, rgba(0, 0, 0, 0) 38%);
+}
+.background_ellipse_red_right{
+    position: absolute;
+    width: 31%;
+    height: 50%;
+    right: 0;
+    bottom: 0;
+    filter: blur(1px);
+    background: linear-gradient(to left top, #C12038 -15%, rgba(194, 99, 113, 0.59375) 17.06%, rgba(0, 0, 0, 0) 38%);
+}
+
+.main_news_header{
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 58px;
+}
+
+.test_one{
+    position: relative;
+}
+.main_news_section{
+    padding: 60px 70px;
+    position: relative;
+}
+.main_news_container{
+    display: flex;
+    padding: 20px 0px;
+    justify-content: space-between;
+    /* gap: 20px; */
+}
+.main_news_container .main_image{
+    width:100%;
+}
+.main_image_desktop,.main_image_mobile{
+    width: 100%;
+}
+
+.image_container_news{
+    position: relative;
+}
+.background_black_place{
+    position: relative;
+}
+.test2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 59.37%, #000000 100%);
+
+}
+.test2_archive{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 59.37%, #000000 100%);
+
+}
+.test2_archive img{
+    width: 95%;
+}
+.up_icon_small{
+    display: none;
+    position: absolute;
+    right: 5%;
+    bottom: 7%;
+    cursor: pointer;
+}
+.up_icon_small:hover{
+    bottom: 8%;
+}
+.overlay_image_dinebistro{
+    position: absolute;
+    top: 16%;
+    left: 20%;
+    width: 63%;
+}
+
+.main_news_container h2, .wrap h2{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    padding: 9px 0;
+}
+.main_news_container p, .wrap p{
+    width: 100%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #5F5F5F;
+    padding-bottom: 6px;
+}
+.main_news_container span, .wrap span{
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    
+
+    color: #7D7D7D;
+}
+
+
+.see_all_news{
+    border: 2px solid #C12038;
+    border-radius: 12px;
+    background: transparent;
+    padding: 10px 15px;
+    font-size: 19px;
+    font-weight: 500;
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    cursor: pointer;
+}
+.see_all_news:hover{
+    background-color: #C12038;
+    color: white;
+}
+
+footer{
+    background-color: #1A1A1A;
+    padding: 60px 70px 30px 70px;
+}
+.brands_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.dine_meat_white{
+    padding-top: 18px;
+}
+
+footer{
+    position: relative;
+}
+
+
+.app_fax_container{
+    padding: 111px 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.app_store_container{
+    display: flex;
+    gap: 7px;
+}
+.dine_club_footer{
+    padding: 10px 0 20px 0;
+    width: 30%;
+}
+.number_mail{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 94px;
+}
+.number_mail p{
+    padding: 5px 0px;
+    font-size: 20px;
+}
+.footer_contact_word{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.footer_subscribe_word{
+    font-size: 20px;
+    padding-bottom: 22px;
+}
+
+.input_button_container{
+    display: flex;
+    gap: 0;
+    margin-top: 10px;
+}
+.input_button_container button{
+    background: #C12038;
+    color: white;
+    padding: 9px 14px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.input_button_container button:hover{
+    background: #ed3c57;
+}
+.input_button_container input{
+    border: none;
+    outline: none;
+    padding-left: 9px;
+    font-size: 20px;
+    background: #272727;
+    color: #A4A4A4;
+}
+
+.brands_chain_footer_name{
+    display: flex;
+    justify-content: center;
+}
+
+.footer_download_word{
+    font-size: 20px;
+}
+
+
+.bottom_footer_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social_media_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 46%;
+}
+
+.rights_container{
+    font-size: 21px;
+    line-height: 25px;
+    /* identical to box height */
+    
+    letter-spacing: -0.02em;
+    
+    color: #AEAEAE;
+}
+.author_container p{
+    color: white;
+    font-style: italic;
+}
+.author_container img{
+    margin-top: 4px;
+}
+
+.container_two_in_one{
+    display: flex;
+    justify-content: space-between;
+}
+.image_container_news,.image_container_news2,.image_container_news3{
+    padding: 2px 10px;
+}
+
+/* .wrap { */
+    /* width: 100%; */
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;         
+    height: 100vh;                  
+    justify-content: space-between; 
+    padding: 10px 20px;
+    flex-wrap: wrap; */
+    /* height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+  } */
+  /* .row{
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .elem1{
+    width: 20%;
+    border: 1px solid black;
+  }
+  .elem1 img{
+    width: 100%;
+  }
+  .elem2{
+
+    border: 1px solid lightgray;
+    flex:20%;
+    margin: 10px;
+  } */
+
+.new_archive_container{
+    position: relative;
+    padding: 20px 70px 0 70px;
+    padding-bottom: 128px;
+}
+.new_archive_container h1{
+    font-size: 50px;
+    font-weight: 300;
+    padding-left: 5px;
+}
+.wrap {
+    padding: 20px 0 20px 0;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .row_custom {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .elem1 {
+    width: 33%;
+    /* border: 1px solid lightgray; */
+  }
+
+  .elem3 {
+    width: 50%;
+    height: 50%;
+    /* border: 1px solid lightgray; */
+    /* flex: 25%; */
+  }
+  .elem3 img{
+    width: 95%;
+  }
+
+  .elem1 img{
+    width: 100%;
+  }
+
+  .color_background img{
+    width: 35%;
+    margin-top: 13%;
+  }
+  .color_bg_c{
+    text-align: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 59.37%, #000000 100%);
+  }
+  .food_service_carousel_container h1{ 
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 82px;
+    /* identical to box height */
+    
+    
+    color: #C12038;
+  }
+  .food_service_carousel_container{
+    padding: 20px 70px;
+  }
+  .food_service_carousel_container p{
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    margin: 20px 0px 60px 0;
+  }
+
+  .carousel_img1{
+    width: 420px;
+    height: 420px;
+  }
+  .container-fluid{
+    padding:0px 70px 20px 70px;
+  }
+  .owl-nav{
+    text-align: center;
+  }
+  .owl-nav span{
+    font-size: 40px;
+    margin: 0 20px;
+    /* background: lightgray; */
+    border-radius: 50%;
+    padding: 0px 20px;
+    padding-bottom: 4px;
+    border: 1px solid gray;
+    color: gray;
+  }
+  .owl-nav span:hover{
+background: lightgrey;
+  }
+  .carousel_container_second .owl-nav span{
+    display: none;
+  }
+  .who_prefered_container{
+    padding: 20px 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* justify-content: space-between; */
+  }
+  .test2_catering{
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   font-weight: 500;
+   font-size: 25px;
+   line-height: 39px;
+   display: flex;
+   align-items: flex-end;
+   text-align: center;
+   color: white;
+  }
+
+  .carousel_img2{
+    width: 420px;
+    height: 283px;
+  }
+
+  .news_one_line_red{
+    margin-top: 69px;
+    border-bottom: 3px solid red;
+    margin-left: 70px;
+  }
+  .news_one_line_red h1{
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 58px;
+    
+    color: #000000;
+  }
+  .carousel_container_second{
+    /* padding-right: 0px; */
+  }
+  .contact_container{
+    padding: 20px 70px;
+    position: relative;
+    padding-bottom: 125px;
+  }
+  .write_your_word{
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 129%;
+  }
+  .two_input_container input,textarea{
+    border: 2px solid #C12038;
+    border-radius: 12px;
+    padding: 7px 0px;
+    padding-left: 7px;
+    font-size: 18px;
+    outline: none;
+    font-weight: 300;
+  }
+.input_container_catering{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.two_input_container input{
+    width: 25%;
+}
+.input_container_catering textarea{
+    width: 50%;
+}
+.send_catering{
+    border: none;
+    outline: none;
+    color: white;
+    background: #C12038;
+    border-radius: 11px;
+    /* font-weight: 500; */
+    font-size: 21px;
+    line-height: 129%;
+    width: 14%;
+    position: absolute;
+    bottom: 10%;
+    left: 36%;
+    padding: 2px 0;
+
+}
+.send_catering:hover{
+    background: #f80f32;
+}
+
+.elem3{
+    position: relative;
+}
+
+.pos_abs{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.map_container{
+    padding: 20px 70px;
+}
+.iframe_container iframe{
+    width: 100%;
+}
+
+@media (max-width:476px) {
+    .color_background span{
+        top: 5%;
+        font-size: 21px;
+    }
+    .custom_navbar img {
+        width: 20%;
+    }
+    .custom_navbar .header_text{
+        font-size: 8px;
+    }
+    .language_selector{
+        font-size: 12px;
+    }
+    .chain_restaurant_logos{
+        padding: 15px 0px;
+    }
+    .about_us{
+        padding: 15px 20px;
+    }
+    .about_us_header{
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .about_us_content{
+        font-size: 13px;
+    }
+    .chain_restaurant_logos .col-4 img {
+        width: 70%;
+    }
+    .main_news_section{
+        padding: 15px 20px;
+    }
+    .main_news_header{
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .main_news_container h2,.wrap h2{
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 5px 0;
+    }
+    .main_news_container p,.wrap p{
+        font-size: 12px;
+        line-height: 14px;
+        width: 75%;
+        padding-bottom: 0px;
+
+    }
+    .main_news_container span, .wrap span{
+        width: 25%;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 19px;
+        color: #7D7D7D;
+        /* display: block; */
+        text-align: right;
+        /* padding-bottom: 6px; */
+        display: flex;
+        background: gainsboro;
+        border-radius: 4px;
+        padding: 0 6px;
+    };
+   
+    img.up_icon_small{
+        display: none;
+    }
+    .desktop_date{
+        display: none;
+    }
+    .mobile_date{
+        display: block;
+    }
+    .main_news_opisa{
+        display: flex;
+        align-items: flex-end;
+    }
+    .overlay_image_dinebistro {
+        position: absolute;
+        top: 18%;
+        left: 20%;
+        width: 65%;
+    }
+    .main_image_desktop{
+        display: none;
+    }
+    .main_image_mobile{
+        display: block;
+    }
+    /* .image_container_news{
+        width: 50%;
+    } */
+    /* .image_container_news3,.image_container_news2{
+        width: 50%;
+    } */
+    .brands_img_container{
+        width: 33%;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .footer_container{
+        padding: 31px 20px 30px 20px;
+    }
+    .app_fax_container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .footer_subscribe_word{
+        padding-bottom: 0;
+        font-size: 13px;
+    }
+    .footer_left_container{
+        display: flex;
+        margin-top: 15px;
+    }
+    .app_store_container img{
+        width: 84px;
+        height: 28px;
+    }
+    .footer_download_word{
+        font-size: 9px;
+    }
+    .dine_club_footer {
+        padding: 10px 0 20px 0;
+        width: 59%;
+    }
+    .footer_contact_word {
+        font-size: 13px;
+        padding-top: 25px;
+    }
+    .number_mail{
+        margin-top: 0px;
+    }
+    .number_mail p{
+        font-size: 13px;
+    }
+    .social_media_container{
+        position: absolute;
+        bottom: 74px;
+        left: 42%;
+    }
+    .social_media_container a{
+        width: 20px;
+    }
+    .rights_container{
+        font-size: 10px;
+    }
+    .author_container p{
+        font-size: 7px;
+    }
+    .author_container img{
+        width: 57px;
+    }
+    .input_button_container input{
+        font-size: 13px;
+    }
+    .input_button_container button{
+        font-size: 14px;
+    }
+    .app_fax_container{
+        padding: 75px 0px;
+        padding-top: 30px;
+    }
+    .bottom_footer_container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .new_archive_container{
+        padding: 9px 8px 19px 9px;
+    }
+    .elem1{
+        width: 50%;
+        display: flex;
+        /* border: 1px solid lightgray; */
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .row_custom {
+        width: 47%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2%;
+    }
+    .elem3{
+        width: 100%;
+    }
+    .elem3 img{
+        width: 100%;
+    }
+    .test2_archive{
+        width: 100%;
+    }
+    .test2_archive img{
+        width: 100%;
+    }
+    .wrap{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    #wrap_first{
+        display: flex;
+        flex-direction: row;
+    }
+    .custom_navbar_container svg{
+        right: 17%;
+    }
+    .search_input{
+        width: 67%;
+    }
+    .main_news_container{
+        display: none;
+    }
+    #hide_it{
+        display: none;
+    }
+    .new_archive_container h1{
+        font-size: 30px;
+    }
+    .see_all_news{
+        margin: 14px auto;
+    }
+    .dineburger_logo {
+        padding-top: 30px !important;
+    }
+    .news_one_line_red{
+        display: none;
+    }
+    .map_container {
+        padding: 20px;
+    }
+    .contact_container{
+        padding: 20px;
+    }
+    .two_input_container input {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .input_container_catering textarea {
+        width: 100%;
+    }
+    .send_catering{
+        width: 100%;
+        position: initial;
+        margin-top: 5px;
+    }
+    .food_service_carousel_container{
+        padding: 20px;
+    }
+    .food_service_carousel_container h1 {
+        font-size: 32px;
+        line-height: 37px;
+    }
+    .test_one img{
+        width: 170px;
+        height: 68px;
+    }
+    .who_prefered_container {
+        padding: 20px 14px;
+    }
+    .test2_catering{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .container-fluid {
+        /* padding: 0px 70px 20px 70px; */
+        padding: 15px;
+    }
+    .brands_container img{
+        width: 77px;
+    };
+
+   
+
+}
+
+
+
+@media (min-width:476px) {
+    .mobile_date{
+        display: none;
+    }
+
+    .up_icon_small{
+        display: block;
+    }
+
+    .main_image_desktop{
+        display: block;
+    }
+    .main_image_mobile{
+        display: none;
+    }
+    #wrap_first{
+        display: none;
+    }
+    .main_news_header_mobile{
+        display: none;
+    }
+
+}
