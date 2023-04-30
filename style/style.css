@@ -38,12 +38,13 @@
 
 
 .custom_navbar{
+    position: relative;
     background: #C12038;
     width: 100%;
     padding: 10px 33px;
 }
 .custom_navbar_container{
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,8 +60,8 @@
 }
 .language_selector{
     position: absolute;
-    right: 0;
-    top: 20%;
+    right: 2%;
+    top: 25%;
     font-size: 26px;
     text-align: right;
     color:white;
@@ -653,6 +654,10 @@ background: lightgrey;
     .language_selector{
         font-size: 12px;
     }
+    .language_selector select{
+        font-size: 11px;
+        padding: 2px;
+    }
     .chain_restaurant_logos{
         padding: 15px 0px;
     }
@@ -895,9 +900,8 @@ background: lightgrey;
         font-size: 32px;
         line-height: 37px;
     }
-    .test_one img{
-        width: 170px;
-        height: 68px;
+    .header_text{
+        margin-bottom: 0px !important;
     }
     .who_prefered_container {
         padding: 20px 14px;
@@ -907,7 +911,6 @@ background: lightgrey;
         line-height: 14px;
     }
     .container-fluid {
-        /* padding: 0px 70px 20px 70px; */
         padding: 15px;
     }
     .brands_container img{
