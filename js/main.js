@@ -25,6 +25,15 @@ document.addEventListener("DOMContentLoaded", () => {
     //     document.body.scrollTop = 0;
     //     document.documentElement.scrollTop = 0;
     // }
+
+    window.onscroll = function(ev) {
+        if (this.pageYOffset > 100) {
+          top_button.style.display = 'block';
+        } else {
+          top_button.style.display = 'none';
+        }
+      };
+
     
     top_button.addEventListener("click", function() {
         console.log("top");

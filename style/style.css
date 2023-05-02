@@ -15,6 +15,11 @@ html {
     align-items: baseline;
     margin-top: 10px;
 } */
+
+a{
+    text-decoration: none;
+    color: white;
+}
 .custom_navbar_container svg{
     cursor: pointer;
     position: absolute;
@@ -181,9 +186,9 @@ html {
 .test_one{
     position: relative;
 }
-.test_one .main_image{
+/* .test_one .main_image{
     width: 100%;
-}
+} */
 .main_news_section{
     padding: 60px 70px;
     position: relative;
@@ -254,10 +259,11 @@ html {
 }
 .up_icon_small{
     display: none;
-    position: absolute;
+    position: fixed;
     right: 5%;
     bottom: 7%;
     cursor: pointer;
+    z-index: 5;
 }
 .up_icon_small:hover{
     bottom: 8%;
@@ -288,8 +294,6 @@ html {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    
-
     color: #7D7D7D;
 }
 
@@ -509,7 +513,7 @@ footer{
 
   .carousel_img1{
     width: 420px;
-    height: 420px;
+    height: 320px;
   }
   .container-fluid{
     padding:0px 70px 20px 70px;
@@ -554,7 +558,7 @@ background: lightgrey;
 
   .carousel_img2{
     width: 420px;
-    height: 283px;
+    height: 263px;
   }
 
   .news_one_line_red{
@@ -851,6 +855,7 @@ background: lightgrey;
     }
     .custom_navbar_container svg{
         right: 17%;
+        top: 29%;
     }
     .search_input{
         width: 67%;
@@ -866,6 +871,8 @@ background: lightgrey;
     }
     .see_all_news{
         margin: 14px auto;
+        font-size: 14px;
+        padding: 3px 9px;
     }
     .dineburger_logo {
         padding-top: 30px !important;
@@ -940,21 +947,104 @@ background: lightgrey;
     .up_icon_small{
         display: block;
     }
-
+    #wrap_first{
+        display: none;
+    }
     .main_image_desktop{
         display: block;
     }
     .main_image_mobile{
         display: none;
     }
-    #wrap_first{
-        display: none;
-    }
+    
     .rate_us_qmeter_container{
         display: none;
     }
     .main_news_header_mobile{
         display: none;
     }
+    .test2_catering img{
+        width: 100% !important;
+    }
 
 }
+
+/* .main_image{
+    width: 100% !important;
+} */
+.owl-stage{
+    right: 100px;
+}
+
+video{
+    width: 100%;
+}
+
+
+
+.content_img {
+
+	
+	  transition: all .5s ease;
+		-moz-transition: all .5s ease;
+		-ms-transition: all .5s ease;
+		-webkit-transition: all .5s ease;
+		-o-transition: all .5s ease;
+	z-index: 5;
+    cursor: pointer;
+
+}
+
+
+
+.content_img:hover {
+    cursor: pointer;
+  transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1); 
+  z-index: 5;
+	
+} 
+
+.social_media_container a {
+    transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -webkit-transition: all .5s ease;
+      -o-transition: all .5s ease;
+
+
+}
+
+.social_media_container a:hover{
+-webkit-box-shadow: 0 0 5px 2px #fff;
+-moz-box-shadow: 0 0 5px 2px #fff;
+box-shadow: 0 0 5px 2px #fff;
+}
+
+.color_blue:hover{
+    color: blue;
+}
+a.color_blue1:hover{
+    color: blue;
+}
+.chain_restaurant_logos .col-4 img{
+    transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -webkit-transition: all .5s ease;
+      -o-transition: all .5s ease;
+    cursor: pointer;
+
+}
+.chain_restaurant_logos .col-4 img:hover{
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1); 
+}
+
+
